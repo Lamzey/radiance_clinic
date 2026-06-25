@@ -58,8 +58,8 @@
 
     // Header carousel
     $(".header-carousel").owlCarousel({
-        autoplay: false,
-        animateOut: 'fadeOutLeft',
+        autoplay: true,
+        animateOut: 'fadeOutRight',
         items: 1,
         dots: true,
         loop: true,
@@ -73,7 +73,7 @@
 
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
-        autoplay: false,
+        autoplay: true,
         smartSpeed: 1000,
         center: true,
         dots: false,
