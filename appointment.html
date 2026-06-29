@@ -114,48 +114,48 @@
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="bg-light rounded h-100 d-flex align-items-center p-5">
-                        <form>
-                            <div class="row g-3">
-                                <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Your Name" style="height: 55px;">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <input type="email" class="form-control border-0" placeholder="Your Email" style="height: 55px;">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Your Mobile" style="height: 55px;">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <select class="form-select border-0" style="height: 55px;">
-                                        <option selected>Choose Service</option>
-                                        <option value="1">Family Services</option>
-                                        <option value="2">Chronic Illness Management</option>
-                                        <option value="3">Same-Day Services</option>
-                                        <option value="4">Preventive Care</option>
-                                    </select>
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <div class="date" id="date" data-target-input="nearest">
-                                        <input type="text"
-                                            class="form-control border-0 datetimepicker-input"
-                                            placeholder="Choose Date" data-target="#date" data-toggle="datetimepicker" style="height: 55px;">
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <div class="time" id="time" data-target-input="nearest">
-                                        <input type="text"
-                                            class="form-control border-0 datetimepicker-input"
-                                            placeholder="Choose Time" data-target="#time" data-toggle="datetimepicker" style="height: 55px;">
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <textarea class="form-control border-0" rows="5" placeholder="Describe your reason for visiting"></textarea>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Book Appointment</button>
-                                </div>
-                            </div>
-                        </form>
+                <form action="https://formsubmit.co/Dimmelafortune@gmail.com" method="POST">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="New Appointment Request - Radiance Clinic">
+                <input type="hidden" name="_template" value="table">
+
+                <div class="row g-3">
+                    <div class="col-12 col-sm-6">
+                        <input type="text" name="Patient_Name" class="form-control border-0" placeholder="Your Name" style="height: 55px;" required>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <input type="email" name="Email_Address" class="form-control border-0" placeholder="Your Email" style="height: 55px;" required>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <input type="text" name="Mobile_Number" class="form-control border-0" placeholder="Your Mobile" style="height: 55px;" required>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <select name="Requested_Service" class="form-select border-0" style="height: 55px;" required>
+                            <option value="" disabled selected>Choose Service</option>
+                            <option value="Family Services">Family Services</option>
+                            <option value="Chronic Illness Management">Chronic Illness Management</option>
+                            <option value="Same-Day Services">Same-Day Services</option>
+                            <option value="Preventive Care">Preventive Care</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <div class="date" id="date" data-target-input="nearest">
+                            <input type="text" name="Preferred_Date" class="form-control border-0 datetimepicker-input" placeholder="Choose Date" data-target="#date" data-toggle="datetimepicker" style="height: 55px;" required>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <div class="time" id="time" data-target-input="nearest">
+                            <input type="text" name="Preferred_Time" class="form-control border-0 datetimepicker-input" placeholder="Choose Time" data-target="#time" data-toggle="datetimepicker" style="height: 55px;" required>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <textarea name="Problem_Description" class="form-control border-0" rows="5" placeholder="Describe your problem" required></textarea>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-primary w-100 py-3" type="submit">Book Appointment</button>
+                    </div>
+                </div>
+            </form>
                     </div>
                 </div>
             </div>
@@ -178,10 +178,10 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-light mb-4">Services</h5>
-                    <a class="btn btn-link" href="">Family Services</a>
-                    <a class="btn btn-link" href="">Chronic Illness Management</a>
-                    <a class="btn btn-link" href="">Same-Day Services</a>
-                    <a class="btn btn-link" href="">Preventive Care</a>
+                    <a class="btn btn-link" href="service.html">Family Services</a>
+                    <a class="btn btn-link" href="service.html">Chronic Illness Management</a>
+                    <a class="btn btn-link" href="service.html">Same-Day Services</a>
+                    <a class="btn btn-link" href="service.html">Preventive Care</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-light mb-4">Quick Links</h5>
