@@ -76,36 +76,50 @@
         </div>
     </nav>
 
+    <!-- Header Start -->
     <div class="container-fluid header p-0 mb-5" style="background-color: #023994;">
         <div class="row g-0 align-items-center flex-column-reverse flex-lg-row">
-            <video width="200" height="400" autoplay muted loop playsinline class="col-lg-6 p-0 wow fadeIn" data-wow-delay="0.1s">
-                <source src="img/home.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+            
+            <!-- LEFT COLUMN: The Carousel -->
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                 <div class="owl-carousel header-carousel">
+                    <!-- Slide 1 -->
                     <div class="owl-carousel-item position-relative">
-                        <img class="img-fluid" src="img/carousel-1.png" alt="">
-                        <div class="owl-carousel-text">
+                        <img class="img-fluid w-100" src="img/carousel-1.png" alt="Family Services">
+                        <div class="position-absolute top-50 start-50 translate-middle text-center w-100 px-3" style="background: rgba(0, 0, 0, 0.4); padding: 20px; border-radius: 10px;">
                             <h2 class="display-1 text-white mb-0" style="font-size: 3rem;">Family Services</h2>
                         </div>
                     </div>
+                    <!-- Slide 2 -->
                     <div class="owl-carousel-item position-relative">
-                        <img class="img-fluid" src="img/carousel-2.png" alt="">
-                        <div class="owl-carousel-text">
+                        <img class="img-fluid w-100" src="img/carousel-2.jpg" alt="Chronic Illness Management">
+                        <div class="position-absolute top-50 start-50 translate-middle text-center w-100 px-3" style="background: rgba(0, 0, 0, 0.4); padding: 20px; border-radius: 10px;">
                             <h2 class="display-1 text-white mb-0" style="font-size: 3rem;">Chronic Illness Management</h2>
                         </div>
                     </div>
+                    <!-- Slide 3 -->
                     <div class="owl-carousel-item position-relative">
-                        <img class="img-fluid" src="img/carousel-3.png" alt="">
-                        <div class="owl-carousel-text">
+                        <img class="img-fluid w-100" src="img/carousel-3.png" alt="Preventive Care">
+                        <div class="position-absolute top-50 start-50 translate-middle text-center w-100 px-3" style="background: rgba(0, 0, 0, 0.4); padding: 20px; border-radius: 10px;">
                             <h2 class="display-1 text-white mb-0" style="font-size: 3rem;">Preventive Care</h2>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- RIGHT COLUMN: The Video Animation -->
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                <div class="position-relative w-100 h-100 d-flex">
+                    <video autoplay loop muted playsinline class="w-100" style="object-fit: cover; min-height: 500px; height: 100%;">
+                        <source src="img/home.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+
         </div>
     </div>
+    <!-- Header End -->
 
     <div class="container-xxl py-5">
         <div class="container">
@@ -259,69 +273,73 @@
             </div>
         </div>
     </div>
-    <div class="row g-5">
-        
-        <!-- LEFT SIDE: Quick Clinic Info -->
-        <div class="col-lg-6">
-            <div class="bg-light rounded p-5 h-100 d-flex flex-column justify-content-center">
-                <h3 class="mb-4">Quick Clinic Info</h3>
-                
-                <!-- Emergency Contact -->
-                <div class="d-flex align-items-center mb-4">
-                    <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
-                        <i class="fa fa-phone fs-4 text-white"></i>
-                    </div>
-                    <div class="ms-3">
-                        <p class="mb-2 text-muted">24/7 Emergency Hotline</p>
-                        <h5 class="mb-0 text-primary">+1 301 272 5117</h5>
+    
+    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+        <div class="container px-lg-0">
+            <div class="row g-5 mx-lg-0">
+                <!-- LEFT SIDE: Quick Clinic Info -->
+                <div class="col-lg-6 ps-lg-0 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="bg-light rounded p-5 h-100 d-flex flex-column justify-content-center">
+                        <h3 class="mb-4">Quick Clinic Info</h3>
+                        
+                        <!-- Emergency Contact -->
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                                <i class="fa fa-phone fs-4 text-white"></i>
+                            </div>
+                            <div class="ms-3">
+                                <p class="mb-2 text-muted">24/7 Emergency Hotline</p>
+                                <h5 class="mb-0 text-primary">+1 301 272 5117</h5>
+                            </div>
+                        </div>
+
+                        <!-- Working Hours -->
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                                <i class="fa fa-clock fs-4 text-white"></i>
+                            </div>
+                            <div class="ms-3">
+                                <p class="mb-2 text-muted">Working Hours</p>
+                                <h6 class="mb-1">Mon - Fri: 09:00 AM - 05:00 PM</h6>
+                                <h6 class="mb-0">Sat: 10:00 AM - 03:00 PM</h6>
+                            </div>
+                        </div>
+
+                        <!-- Location & Directions -->
+                        <div class="d-flex align-items-center">
+                            <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                                <i class="fa fa-map-marker-alt fs-4 text-white"></i>
+                            </div>
+                            <div class="ms-3">
+                                <p class="mb-2 text-muted">Our Location</p>
+                                <h6 class="mb-2">18310 Montgomery Village Ave, Ste 300, MD 20879</h6>
+                                <a href="https://www.google.com/maps/dir/?api=1&destination=18310+Montgomery+Village+Ave,+Ste+300,+MD+20879" target="_blank" class="btn btn-sm btn-primary rounded-pill px-3 mt-1">Get Directions</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Working Hours -->
-                <div class="d-flex align-items-center mb-4">
-                    <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
-                        <i class="fa fa-clock fs-4 text-white"></i>
-                    </div>
-                    <div class="ms-3">
-                        <p class="mb-2 text-muted">Working Hours</p>
-                        <h6 class="mb-1">Mon - Fri: 09:00 AM - 05:00 PM</h6>
-                        <h6 class="mb-0">Sat: 10:00 AM - 03:00 PM</h6>
-                    </div>
-                </div>
-
-                <!-- Location & Directions -->
-                <div class="d-flex align-items-center">
-                    <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
-                        <i class="fa fa-map-marker-alt fs-4 text-white"></i>
-                    </div>
-                    <div class="ms-3">
-                        <p class="mb-2 text-muted">Our Location</p>
-                        <h6 class="mb-2">18310 Montgomery Village Ave, Ste 300, MD 20879</h6>
-                        <a href="https://www.google.com/maps/dir/?api=1&destination=18310+Montgomery+Village+Ave,+Ste+300,+MD+20879" target="_blank" class="btn btn-sm btn-primary rounded-pill px-3 mt-1">Get Directions</a>
+                <!-- RIGHT SIDE: Book Online Banner -->
+                <div class="col-lg-6 pe-lg-0 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
+                    <div class="position-relative h-100 rounded overflow-hidden m-5 m-lg-0">
+                        <!-- Background Image -->
+                        <img class="position-absolute w-100 h-100" src="img/about-1.png" style="object-fit: cover;" alt="Book Appointment">
+                        
+                        <!-- Dark Overlay for Text Readability -->
+                        <div class="position-absolute w-100 h-100 bg-dark" style="opacity: 0.7;"></div>
+                        
+                        <!-- Content -->
+                        <div class="position-relative d-flex flex-column justify-content-center align-items-center text-center h-100 p-5">
+                            <h2 class="text-white mb-4">Ready to see a specialist?</h2>
+                            <p class="text-white mb-4">Skip the wait and secure your preferred time slot by sending our staff a direct booking request online.</p>
+                            <a href="appointment.html" class="btn btn-primary rounded-pill py-3 px-5">Book Appointment Online</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- RIGHT SIDE: Book Online Banner -->
-        <div class="col-lg-6">
-            <div class="position-relative h-100 rounded overflow-hidden">
-                <!-- Background Image -->
-                <img class="position-absolute w-100 h-100" src="img/about-1.png" style="object-fit: cover;" alt="Book Appointment">
-                
-                <!-- Dark Overlay for Text Readability -->
-                <div class="position-absolute w-100 h-100 bg-dark" style="opacity: 0.7;"></div>
-                
-                <!-- Content -->
-                <div class="position-relative d-flex flex-column justify-content-center align-items-center text-center h-100 p-5">
-                    <h2 class="text-white mb-4">Ready to see a specialist?</h2>
-                    <p class="text-white mb-4">Skip the wait and secure your preferred time slot by sending our staff a direct booking request online.</p>
-                    <a href="appointment.html" class="btn btn-primary rounded-pill py-3 px-5">Book Appointment Online</a>
-                </div>
-            </div>
-        </div>
-
     </div>
+
     <div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
